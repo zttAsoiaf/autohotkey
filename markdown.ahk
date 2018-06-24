@@ -43,9 +43,7 @@ sendbyclip("410422199209309154")
 return
 
 ;标点符号 中文->英文
-:*:::::   ;中文输入法状态下输入两个::变成:
-SendbyClip(":")
-return
+
 
 :*:!!::
 sendbyclip("!")
@@ -87,13 +85,20 @@ send {Left 1}
 return
 
 
-
 :*:,,::
 sendbyclip(",")
 return
 
 :*:..::
 sendbyclip(".")
+return
+
+:*:;;::
+sendbyclip(";")
+return
+
+:*:::::   ;中文输入法状态下输入两个::变成:
+SendbyClip(":")
 return
 
 :*:[[::
@@ -106,40 +111,61 @@ sendbyclip("]")
 return
 
 
-
 :*:\\::
 sendbyclip("\")
 return
 
-::11::
+:*:""::
+sendbyclip("""""")
+send {Left 1}
+return
+
+
+:*://::
+sendbyclip("//")
+return
+
+:*:<<::
+sendbyclip("<")
+return
+
+:*:>>::
+sendbyclip(">")
+return
+
+:*:````::
+sendbyclip("````")
+return
+
+:*:11::
 sendbyclip("!")
 return
 
-::22::
+:*:22::
 sendbyclip("@")
 return
 
-::33::
+:*:33::
 sendbyclip("#")
 return
 
-::44::
+:*:44::
 sendbyclip("$")
 return
 
-::55::
+:*:55::
 sendbyclip("%")
 return
 
-::66::
+:*:66::
 sendbyclip("^")
 return
 
-::77::
+:*:77::
 sendbyclip("&")
 return
 
-::88::
+:*:88::
 sendbyclip("*")
 return
 
@@ -147,8 +173,6 @@ return
 sendbyclip("()")
 send {Left 1}
 return
-
-
 
 ::th::
 sendbyclip("!")
@@ -194,6 +218,10 @@ return
 sendbyclip("ls")
 return
 
+:*:vim::
+sendbyclip("vim")
+return
+
 :*:''::
 sendbyclip("''")
 send {Left 1}
@@ -201,39 +229,6 @@ return
 
 :c*:j@::john@somedomain.com
 
-:*:""::
-sendbyclip("""""")
-send {Left 1}
-return
-
-
-:*://::
-sendbyclip("//")
-return
-
-:*:;;::
-sendbyclip(";")
-return
-
-::<<::
-sendbyclip("<")
-return
-
-::>>::
-sendbyclip(">")
-return
-
-:*:\\::
-sendbyclip("\")
-return
-
-::|::
-sendbyclip("|")
-return
-
-:*:````::
-sendbyclip("````")
-return
 
 
 ;;;;;;;;;;;;;LICENSE;;;;;;;;;;;;;;;;;;;;;
