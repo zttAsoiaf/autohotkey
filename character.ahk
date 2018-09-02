@@ -181,13 +181,6 @@ return
 sendbyclip(".")
 return
 
-:*:cd::
-sendbyclip("cd ")
-return
-
-:*:ls::
-sendbyclip("ls")
-return
 
 :*:''::
 sendbyclip("''")
@@ -203,7 +196,7 @@ return
 
 
 :://::
-sendbyclip("//")
+sendbyclip("/")
 return
 
 ::;;::
