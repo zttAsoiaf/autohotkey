@@ -16,32 +16,32 @@ sendbyclip(var_string)
 }
 
 :*:yx::
-sendbyclip("811972833@qq.com")
+sendbyclip("@qq.com")
 return
 
 :*:163::
-sendbyclip("m13128812409@163.com")
+sendbyclip("@163.com")
 return
 
 
 :*:333::
-sendbyclip("33315S151501")
+sendbyclip("")
 return
 
 :*:15::
-sendbyclip("15S151501")
+sendbyclip("")
 return
 
 :*:410::
-sendbyclip("410422199209309154")
+sendbyclip("")
 return
 
 :*:dh::
-sendbyclip("13128812409")
+sendbyclip("")
 return
 
 :*:sfz::
-sendbyclip("410422199209309154")
+sendbyclip("")
 return
 
 ;标点符号 中文->英文
