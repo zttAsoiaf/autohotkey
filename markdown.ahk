@@ -26,10 +26,6 @@ return
 sendbyclip("m13128812409@163.com")
 return
 
-:*:00::
-sendbyclip("00443626")
-return
-
 :*:410::
 sendbyclip("410422199209309154")
 return
